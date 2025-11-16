@@ -38,7 +38,7 @@ public final class BlockPropertyGenerator extends DataGenerator {
                     }
                     case EnumProperty<?> enumProperty -> {
                         propertyJson.addProperty("type", "enum");
-                        propertyJson.addProperty("mojangName", enumProperty.getPossibleValues().getFirst().getClass().getSimpleName());
+                        propertyJson.addProperty("mojangName", enumProperty.getPossibleValues().getFirst().getDeclaringClass().getSimpleName());
                         propertyJson.add("values", fillValues(enumProperty));
                     }
                     case BooleanProperty booleanProperty -> propertyJson.addProperty("type", "boolean");
