@@ -32,6 +32,7 @@ public enum DataGenType {
 
     ATTRIBUTES("attribute", new AttributeGenerator()),
     BLOCKS("block", new BlockGenerator()),
+    BLOCK_PROPERTIES("block_property", new BlockPropertyGenerator()),
     BLOCK_SOUND_TYPES("block_sound_type", new BlockSoundTypeGenerator()),
     ENTITIES("entity_type", new EntityGenerator()),
     FEATURE_FLAGS("feature_flag", new FeatureFlagGenerator()),
